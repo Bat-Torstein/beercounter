@@ -3,8 +3,8 @@ version: "3"
 services:
  beercounter:
    container_name: beercounter
-   build: 
-    context: ../dist/beercounter
-    dockerfile: ../../docker/dockerfile
+   build:
+    context: ../
+    dockerfile: docker/dockerfile
    ports:
     - 3000:80

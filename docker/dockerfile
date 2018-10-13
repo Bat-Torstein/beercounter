@@ -1,8 +1,9 @@
 FROM microsoft/iis
 LABEL Description="IIS with Beer counter"
-MAINTAINER Bat-Torstein
-
+LABEL Maintainer = "Bat-Torstein"
 RUN powershell Add-WindowsFeature Web-Asp-Net45,Web-Http-Tracing,Web-Scripting-Tools,Web-WebSockets
-COPY . c:/inetpub/wwwroot
+
+WORKDIR c:/inetpub/wwwroot
+COPY ./dist/beercounter .
 
 

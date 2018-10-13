@@ -1,0 +1,8 @@
+#folders
+e2e
+node_modules
+src
+
+#files 
+Dockerfile*
+**/*.md
