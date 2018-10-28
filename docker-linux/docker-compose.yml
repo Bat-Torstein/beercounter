@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+ beercounter:
+   container_name: beercounter
+   build:
+    context: ../
+    dockerfile: docker-linux/dockerfile
+   ports:
+    - 3000:80
+   tty: true
